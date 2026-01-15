@@ -1,3 +1,33 @@
-body{
-    background-color: blueviolet;
+:root {
+    --bg: #ffffff;
+    --bg: #000;
+    --card: #f4f4f4;
+}
+
+.dark {
+    --bg: #121212;
+    --text: #fff;
+    --card: #1e1e1e;
+}
+
+body {
+    margin: 0;
+    front-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-between; /* centers items horizontally */
+   align-items: center; /*centers item vertically */
+   padding: 15px 0;
+   gap: 20px; /* Adds space between the navbar option */
+   background: #333;
+   color: white;
+}
+
+.navbar a {
+    color: white;
+    margin-right: 15px;
 }
